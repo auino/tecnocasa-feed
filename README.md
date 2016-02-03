@@ -15,7 +15,13 @@ Occorre sottolineare che lo sviluppatore non è in alcun modo affiliato a Tecnoc
 
 ####Dettagli tecnici
 
-TODO
+Il programma è scritto in Python ed utilizza le seguenti librerie:
+ * `web.py`
+ * `requests`
+ * `BeautifulSoap`
+ * `datetime`
+
+Sebbene il programma sia da intendersi principalmente per un pubblico italiano, il codice è scritto in lingua inglese.
 
 ###Configurazione del server
 

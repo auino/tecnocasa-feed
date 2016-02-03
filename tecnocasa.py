@@ -1,7 +1,6 @@
 #!/bin/python
 import web
 import requests
-import hashlib
 from datetime import datetime
 from BeautifulSoup import BeautifulSoup
 
