@@ -23,9 +23,30 @@ Il programma è scritto in Python ed utilizza le seguenti librerie:
 
 Sebbene il programma sia da intendersi principalmente per un pubblico italiano, il codice è scritto in lingua inglese.
 
-###Configurazione del server
+###Setup del server
+
+####Prerequisiti
 
 TODO
+
+####Configurazione
+
+TODO
+
+####Esecuzione
+
+E' possibile avviare il server attraverso il seguente comando.
+
+```
+python tecnocasa.py
+```
+
+Il server resterà in questo caso in ascolto sulla porta `8080`, la porta di default.
+Se si desidera adottare un'altra porta (ad esempio, la porta `1234`), è possibile avviare il server attraverso il seguente comando.
+
+```
+python tecnocasa.py 1234
+```
 
 ####Formato del feed
 
