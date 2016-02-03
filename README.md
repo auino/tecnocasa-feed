@@ -75,4 +75,4 @@ TODO
 
 ###Contatti
 
-Puoi trovarmi su Twitter come [@auino](https://twitter.com/auino).
+Sono disponibile su Twitter come [@auino](https://twitter.com/auino).
