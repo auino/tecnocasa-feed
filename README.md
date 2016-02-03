@@ -13,7 +13,7 @@ Maggiori informazioni sono disponibili sul sito ufficiale [www.tecnocasa.it](htt
 
 Occorre sottolineare che lo sviluppatore non è in alcun modo affiliato a Tecnocasa.
 
-####Dettagli tecnici
+####Approccio seguito
 
 Il programma fa uso di tecniche di [parsing](https://it.wikipedia.org/wiki/Parsing) (attraverso la libreria [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/)) per analizzare il contenuto (sotto forma di [DOM](https://it.wikipedia.org/wiki/Document_Object_Model)) del [sito mobile di Tecnocasa](http://m.tecnocasa.it).
 Siccome l'approccio seguito si basa su una analisi sintattica, il sistema non è da ritenersi affidabile nel caso di modifiche alla struttura delle pagine analizzate.
