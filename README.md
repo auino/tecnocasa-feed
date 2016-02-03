@@ -5,6 +5,13 @@ Therefore, this document is written in Italian language.
 
 ###Descrizione
 
+Questo programma permette di configurare su un server web in grado di fornire feed in formato [RSS](https://it.wikipedia.org/wiki/RSS) dei risultati ottenuti dal sito di [Tecnocasa](http://tecnocasa.it), per specifiche ricerche personalizzabili.
+Siccome il sito ufficiale di Tecnocasa non fornisce (ad oggi, al meglio della conoscenza del sito da parte dello sviluppatore) un servizio di [API](https://it.wikipedia.org/wiki/Application_programming_interface) o [feed](https://it.wikipedia.org/wiki/Feed) RSS (cosa che ad esempio [Immobiliare.it](http://immobiliare.it) offre), questo programma permette di sopperire a questa mancanza, ponendosi tra il sito ufficiale di Tecnocasa e un comune [feed reader](https://it.wikipedia.org/wiki/Aggregatore).
+
+Occorre sottolineare che lo sviluppatore non è in alcun modo affiliato a Tecnocasa.
+
+####Dettagli tecnici
+
 TODO
 
 ###Configurazione del server
