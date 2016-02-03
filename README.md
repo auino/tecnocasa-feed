@@ -64,7 +64,7 @@ dove si assume che il server sia in ascolto sulla porta di default `8080`, e dov
 
 Questa pagina reindirizza l'utente alla [pagina principale del progetto](https://github.com/auino/tecnocasa-feed) su GitHub.
 
-####Formato del feed
+####Pagina del feed
 
 TODO
 
