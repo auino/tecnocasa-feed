@@ -82,12 +82,16 @@ def getoffers(page, lat, lon, radius, price, size):
 	return offers
 
 urls = (
+	'/', 'index',
 	'/feed/', 'feed'
 )
 
 render = web.template.render('templates/', cache=False)
 
 app = web.application(urls, globals())
+
+class index:
+	def GET(self): return render.index()
 
 class feed:
 	def GET(self):
