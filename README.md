@@ -1,3 +1,5 @@
+[Versione parzialmente incompleta]
+
 # tecnocasa-feed
 
 This service is intended to be mainly used from Italian persons.
