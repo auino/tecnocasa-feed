@@ -35,18 +35,31 @@ TODO
 
 ####Esecuzione
 
-E' possibile avviare il server attraverso il seguente comando.
+E' possibile avviare il server web attraverso il seguente comando:
 
 ```
 python tecnocasa.py
 ```
 
 Il server resterà in questo caso in ascolto sulla porta `8080`, la porta di default.
-Se si desidera adottare un'altra porta (ad esempio, la porta `1234`), è possibile avviare il server attraverso il seguente comando.
+
+Se si desidera adottare un'altra porta (ad esempio, la porta `1234`), è possibile avviare il server attraverso il seguente comando:
 
 ```
 python tecnocasa.py 1234
 ```
+
+####Pagina principale
+
+Il server web fornisce una pagina principale (generalmente nota come `index`), visitabile al seguente indirizzo:
+
+```
+http://ip_server:8080/
+```
+
+dove si assume che il server sia in ascolto sulla porta di default (`8080`), e dove `ip_server` identifica l'indirizzo del server.
+
+Questa pagina reindirizza l'utente alla [pagina principale del progetto](https://github.com/auino/tecnocasa-feed) su GitHub.
 
 ####Formato del feed
 
