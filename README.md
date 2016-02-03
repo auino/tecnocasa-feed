@@ -21,7 +21,7 @@ Il programma è scritto in Python ed utilizza le seguenti librerie:
  * `BeautifulSoap`
  * `datetime`
 
-Sebbene il programma sia da intendersi principalmente per un pubblico italiano, il codice è scritto in lingua inglese.
+Sebbene il programma sia da intendersi principalmente per un pubblico italiano, il codice ed i commenti in esso presenti sono scritti in lingua inglese.
 
 ###Setup del server
 
