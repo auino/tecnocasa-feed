@@ -1,0 +1,18 @@
+$def with (offers, date, description)
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title><![CDATA[Tecnocasa - $:description]]></title>
+		<link>http://www.tecnocasa.it</link>
+		<description><![CDATA[Tecnocasa - $:description]]></description>
+		<language>it</language>
+	$for offer in offers:
+		<item>
+			<guid>$:offer['id']</guid>
+			<title>$:offer['location_right'] - $:offer['size'] mq per $:offer['price'] €</title>
+			<link><![CDATA[$:offer['url']]]></link>
+			<pubDate>$:date</pubDate>
+			<description><![CDATA[<b>$:offer['location']</b><br /><b>$:offer['price'] €, $:offer['size'] mq, $:offer['rooms'] locali</b><br /><img src="$:offer['image']" border="0" /><br/><a href="$:offer['url']">Maggiori informazioni</a>]]></description>
+		</item>
+	</channel>
+</rss>
