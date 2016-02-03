@@ -1,7 +1,8 @@
 # tecnocasa-feed
 
 This service is intended to be mainly used from Italian persons.
-Therefore, this document is written in Italian language.
+This document is therefore written in Italian language.
+Nevertheless, code and included comments are in English language.
 
 ###Descrizione
 
