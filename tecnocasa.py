@@ -5,15 +5,14 @@ import hashlib
 from datetime import datetime
 from BeautifulSoup import BeautifulSoup
 
-BASEURL="http://m.tecnocasa.it/annunci/immobili/"
-TOWNID=""
 DESTINATIONPROPERTY="CIVIL"
 MISSION="acquis"
+TOWNID=""
+PAGESIZE=10
+BASEURL="http://m.tecnocasa.it/annunci/immobili/"
 REFERER="http://m.tecnocasa.it/"
 
 DOMAINBASEURL="http://www.tecnocasa.it"
-
-PAGESIZE=10
 
 # returns an offer object from html code
 def getoffer(html):
