@@ -57,7 +57,7 @@ Il server web fornisce una pagina principale (generalmente nota come `index`), v
 http://ip_server:8080/
 ```
 
-dove si assume che il server sia in ascolto sulla porta di default (`8080`), e dove `ip_server` identifica l'indirizzo del server.
+dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `ip_server` identifica l'indirizzo del server.
 
 Questa pagina reindirizza l'utente alla [pagina principale del progetto](https://github.com/auino/tecnocasa-feed) su GitHub.
 
