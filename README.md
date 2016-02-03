@@ -3,22 +3,22 @@
 This service is intended to be mainly used from Italian persons.
 Therefore, this document is written in Italian language.
 
-### Descrizione ###
+###Descrizione
 
 TODO
 
-### Configurazione del server ###
+###Configurazione del server
 
 TODO
 
-#### Formato del feed ####
+####Formato del feed
 
 TODO
 
-### Esempio di utilizzo ###
+###Esempio di utilizzo
 
 TODO
 
-### Contatti ###
+###Contatti
 
 Puoi trovarmi su Twitter come [@auino](https://twitter.com/auino).
