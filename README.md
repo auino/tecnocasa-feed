@@ -110,7 +110,7 @@ Per quanto riguarda il recupero dei parametri relativi alle coordinate, questi p
  1. Attraverso l'utilizzo di siti appositi come [getlatlon.yohman.com](http://getlatlon.yohman.com)
  2. Direttamente dal [sito mobile di Tecnocasa](http://m.tecnocasa.it), effettuando una ricerca ed analizzando i parametri passati nell'indirizzo
 
-Il formato di output del feed è fornito in [templates/feed.html](https://github.com/auino/tecnocasa-feed/blob/master/templates/feed.html).
+Il formato di output del feed è fornito da [templates/feed.html](https://github.com/auino/tecnocasa-feed/blob/master/templates/feed.html).
 
 ###Esempio di utilizzo
 
