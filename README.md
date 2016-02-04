@@ -101,11 +101,13 @@ dove si assume che il server sia in ascolto sulla porta di default `8080`, e dov
 
 La pagina richiede pertanto il passaggio in input delle seguenti informazioni:
  * le coordinate di un punto di riferimento su mappa, sotto forma di latitudine (parametro `$lat`) e longitudine (parametro `$lon`)
- * il raggio considerato per la ricerca di offerte (parametro `$radius`)
+ * il raggio considerato per la ricerca di offerte (parametro `$radius`), in chilometri
  * il prezzo massimo da considerare (parametro `$price`), senza punti o virgole
  * la dimensione minima in metri quadri (parametro `$size`)
 
-TODO
+Per quanto riguarda il recupero dei parametri relativi alle coordinate, questi possono essere identificati in vari modi:
+ 1. Attraverso l'utilizzo di siti appositi come [getlatlon.yohman.com](http://getlatlon.yohman.com)
+ 2. Direttamente dal [sito mobile di Tecnocasa](http://m.tecnocasa.it), effettuando una ricerca ed analizzando i parametri passati nell'indirizzo
 
 ###Esempio di utilizzo
 
