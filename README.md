@@ -32,7 +32,7 @@ Da notare che, sebbene il programma sia da intendersi principalmente per un pubb
 
 Per installare il software eseguire il seguente comando da terminale:
 
-```
+```sh
 git clone https://github.com/auino/tecnocasa-feed.git
 ```
 
@@ -40,7 +40,7 @@ Una directory di nome `tecnocasa-feed` verrà creata.
 
 A questo punto è possibile accedere alla directory creata con il seguente comando:
 
-```
+```sh
 cd tecnocasa-feed
 ```
 
@@ -53,7 +53,7 @@ Il programma è scritto in Python ed utilizza le seguenti librerie:
 
 Per installare le librerie necessarie, eseguire il seguente comando da terminale:
 
-```
+```sh
 sudo pip install -r requirements.txt
 ```
 
@@ -65,7 +65,7 @@ TODO
 
 E' possibile avviare il server web attraverso il seguente comando:
 
-```
+```sh
 python tecnocasa.py
 ```
 
@@ -73,7 +73,7 @@ Il server resterà in questo caso in ascolto sulla porta `8080`, la porta di def
 
 Se si desidera adottare un'altra porta (ad esempio, la porta `1234`), è possibile avviare il server attraverso il seguente comando:
 
-```
+```sh
 python tecnocasa.py 1234
 ```
 
@@ -81,7 +81,7 @@ python tecnocasa.py 1234
 
 Il server web fornisce una pagina principale (generalmente nota come `index`), visitabile al seguente indirizzo:
 
-```
+```php
 http://$ip_server:8080/
 ```
 
