@@ -85,7 +85,7 @@ def getoffer(html):
 	return res
 
 # returns all the offers for the relative page and appends them to the offers list
-def getoffers(page, lat, lon, radius, price, size):
+def getoffers(page, lat, lon, radius, price, size=None):
 	offers = []
 	# building complete url of real estate service
 	FULLURL=BASEURL+"?searchRequest.radius="+str(radius)+"&searchRequest.price="+str(price)+"&pageSize="+str(PAGESIZE)+"&searchRequest.latitude="+str(lat)+"&searchRequest.pageNumber="+str(page)+"&searchRequest.destinationProperty="+str(DESTINATIONPROPERTY)+"&searchRequest.townId="+str(TOWNID)+"&searchRequest.mobile=true&searchRequest.longitude="+str(lon)+"&searchRequest.mission="+str(MISSION)
@@ -106,7 +106,7 @@ def getoffers(page, lat, lon, radius, price, size):
 		# checking if offer price is higher than the maximum price specified by the user (it may be, e.g., for sponsored offers)
 		if int(offer['price']) > int(price): continue
 		# checking if offer size is lower than the minimum size specified by the user (real estate service does not offers the way to filter on such parameter, on mobile website)
-		if size == None or offer['size'] == None or int(size) > int(offer['size']): continue
+		if size == None or size == '' or offer['size'] == None or int(size) > int(offer['size']): continue
 		# appending the current offer to the results list
 		offers.append(offer)
 	# returing the result
