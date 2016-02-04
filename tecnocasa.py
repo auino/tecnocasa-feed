@@ -100,7 +100,7 @@ class feed:
 		offers = []
 		for p in range(0, PAGESCOUNT):
 			print p
-			offers += getoffers(p, d['lat'], d['lon'], d['radius'], d['price'], d['size'])
+			offers += getoffers(p, d['lat'].replace('.', ','), d['lon'].replace('.', ','), d['radius'], d['price'], d['size'])
 		date = datetime.today().strftime("%a, %d %b %Y %H:%M:%S +0200")
 		return render.feed(offers=offers, date=date, description=d['description'])
 
