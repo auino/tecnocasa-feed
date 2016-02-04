@@ -69,13 +69,7 @@ E' possibile avviare il server web attraverso il seguente comando:
 python tecnocasa.py
 ```
 
-Il server resterà in questo caso in ascolto sulla porta `8080`, la porta di default.
-
-Se si desidera adottare un'altra porta (ad esempio, la porta `1234`), è possibile avviare il server attraverso il seguente comando:
-
-```
-python tecnocasa.py 1234
-```
+Se non configurato diversamente, il server resterà in questo caso in ascolto sulla porta di default `8080`.
 
 ####Pagina principale
 
