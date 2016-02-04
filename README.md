@@ -28,10 +28,9 @@ Da notare che, sebbene il programma sia da intendersi principalmente per un pubb
 ####Prerequisiti
 
 Il programma è scritto in Python ed utilizza le seguenti librerie:
- * `web.py`
- * `requests`
- * `BeautifulSoap`
- * `datetime`
+ * [web.py](http://webpy.org) to host the web service
+ * [requests](http://docs.python-requests.org/en/master/) to communicate with Tecnocasa servers
+ * [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) to parse HTML contents
 
 TODO
 
