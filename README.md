@@ -1,5 +1,3 @@
-[Versione parzialmente incompleta]
-
 # tecnocasa-feed
 
 This service is intended to be mainly used from Italian persons.
@@ -59,7 +57,20 @@ sudo pip install -r requirements.txt
 
 ####Configurazione
 
-TODO
+E' possibile configurare il programma modificando manualmente il contenuto del file [tecnocasa.py]((https://github.com/auino/tecnocasa-feed/blob/master/tecnocasa.py).
+
+#####Configurazione del web service
+
+I seguenti parametri possono essere configurati a piacimento:
+ * `LISTENADDRESS` identifica l'indirizzo di ascolto del web service: è possibile impostare questo valore a `"0.0.0.0"` (valore di default) per mettere in ascolto il server su qualunque indirizzo; in alternativa, è ad esempio possibile rispondere solo a richieste locali (provenienti da `localhost`; utile ad esempio nel caso in cui un web server agisca come proxy) impostando il parametro al valore `"127.0.0.1"`
+ * `LISTENPORT` identifica la porta di ascolto del web service
+ * `PAGESCOUNT` identifica il numero di pagine da scorrere tra i risultati ritornati dal sito di Tecnocasa; un valore molto alto di questo parametro potrebbe portare il client ad attese molto lunghe, pertanto si consiglia l'adozione di un valore basso
+
+#####Parametri di ricerca
+
+Questi parametri sono legati all'implementazione del [sito mobile di Tecnocasa](http://m.tecnocasa.it).
+La accurata scelta di questi parametri richiede pertanto una navigazione manuale sul sito (non necessariamente da dispositivo mobile) e l'esecuzione di una ricerca di esempio desiderata (ad esempio, è possibile cambiare selezionare la tipologia di immobile, o di contratto).
+A questo punto, quando viene mostrata la pagina dei risultati, è possibile analizzare l'indirizzo della pagina corrente, per identificare appropriati valori di configurazione da adottare.
 
 ####Esecuzione
 
@@ -93,14 +104,17 @@ http://$ip_server:8080/feed/?lat=$lat&lon=$lon&radius=$radius&price=$price&size=
 
 dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `$ip_server` identifica l'indirizzo del server.
 
-La pagina richiede pertanto il passaggio in input delle seguenti informazioni (tutti i parametri sono obbligatori):
+La pagina richiede pertanto il passaggio in input delle seguenti informazioni:
  * le coordinate di un punto di riferimento su mappa, sotto forma di latitudine (parametro `$lat`) e longitudine (parametro `$lon`)
  * il raggio considerato per la ricerca di offerte (parametro `$radius`), in chilometri
  * il prezzo massimo da considerare (parametro `$price`), senza punti o virgole
  * la dimensione minima in metri quadri (parametro `$size`)
  * la descrizione della query (parametro `$description`), utilizzata all'interno del titolo del feed
 
-Per quanto riguarda il recupero dei parametri relativi alle coordinate, questi possono essere identificati in vari modi:
+Tutti i parametri sono obbligatori.
+Tuttavia, relativamente al parametro `$size`, è possibile evitare che questo venga considerato impostando un valore pari a `0`.
+
+Invece, per quanto riguarda il recupero dei parametri relativi alle coordinate, questi possono essere identificati in vari modi:
  1. Attraverso l'utilizzo di siti appositi come [getlatlon.yohman.com](http://getlatlon.yohman.com)
  2. Direttamente dal [sito mobile di Tecnocasa](http://m.tecnocasa.it), effettuando una ricerca ed analizzando i parametri passati nell'indirizzo
 
