@@ -122,7 +122,7 @@ Il formato di output del feed è fornito da [templates/feed.html](https://github
 
 ###Esempio di utilizzo
 
-Assumendo che si voglia fare una ricerca (denominata `Roma Centro`) in un raggio di `5` chilometri dal centro di Roma (associato a latitudine `41.91022566604198` e longitudine `12.535997900000098`), per immobili di almeno `60` metri quadri e di valore non superiore a `250000` €, il corretto indirizzo del feed sarebbe il seguente:
+Assumendo che si voglia fare una ricerca (denominata `Roma Centro`) in un raggio di `5` chilometri dal centro di Roma (associato a latitudine `41.91022566604198` e longitudine `12.535997900000098`), per immobili di almeno `60` metri quadri e di valore non superiore a `250000` euro, il corretto indirizzo del feed sarebbe il seguente:
 
 ```
 http://$ip_server:8080/feed/?lat=41.91022566604198&lon=12.535997900000098&radius=5&price=250000&size=60&description=Roma%20Centro
