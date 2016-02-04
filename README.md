@@ -94,7 +94,7 @@ Questa pagina reindirizza l'utente alla [pagina principale del progetto](https:/
 Il server web permette di recuperare un feed RSS personalizzato, visitabile al seguente indirizzo:
 
 ```
-http://$ip_server:8080/feed/?lat=$lat&lon=$lon&radius=$radius&price=$price&size=$size
+http://$ip_server:8080/feed/?lat=$lat&lon=$lon&radius=$radius&price=$price&size=$size&description=$description
 ```
 
 dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `$ip_server` identifica l'indirizzo del server.
@@ -104,6 +104,7 @@ La pagina richiede pertanto il passaggio in input delle seguenti informazioni:
  * il raggio considerato per la ricerca di offerte (parametro `$radius`), in chilometri
  * il prezzo massimo da considerare (parametro `$price`), senza punti o virgole
  * la dimensione minima in metri quadri (parametro `$size`)
+ * la descrizione della query (parametro `$description`), utilizzata all'interno del titolo del feed
 
 Per quanto riguarda il recupero dei parametri relativi alle coordinate, questi possono essere identificati in vari modi:
  1. Attraverso l'utilizzo di siti appositi come [getlatlon.yohman.com](http://getlatlon.yohman.com)
@@ -111,10 +112,10 @@ Per quanto riguarda il recupero dei parametri relativi alle coordinate, questi p
 
 ###Esempio di utilizzo
 
-Assumendo che si voglia fare una ricerca in un raggio di `5` chilometri dal centro di Roma (associato a latitudine `41.91022566604198` e longitudine `12.535997900000098`), per immobili di almeno `70` metri quadri e di valore non superiore a `200000` €, il corretto indirizzo del feed sarebbe il seguente:
+Assumendo che si voglia fare una ricerca (denominata `RomaCentro`) in un raggio di `5` chilometri dal centro di Roma (associato a latitudine `41.91022566604198` e longitudine `12.535997900000098`), per immobili di almeno `70` metri quadri e di valore non superiore a `200000` €, il corretto indirizzo del feed sarebbe il seguente:
 
 ```
-http://$ip_server:8080/feed/?lat=41.91022566604198&lon=12.535997900000098&radius=5&price=200000&size=70
+http://$ip_server:8080/feed/?lat=41.91022566604198&lon=12.535997900000098&radius=5&price=200000&size=70&description=RomaCentro
 ```
 
 dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `$ip_server` identifica l'indirizzo del server.
