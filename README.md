@@ -110,17 +110,19 @@ Per quanto riguarda il recupero dei parametri relativi alle coordinate, questi p
  1. Attraverso l'utilizzo di siti appositi come [getlatlon.yohman.com](http://getlatlon.yohman.com)
  2. Direttamente dal [sito mobile di Tecnocasa](http://m.tecnocasa.it), effettuando una ricerca ed analizzando i parametri passati nell'indirizzo
 
+Il formato di output del feed è fornito in [templates/feed.html](https://github.com/auino/tecnocasa-feed/blob/master/templates/feed.html).
+
 ###Esempio di utilizzo
 
-Assumendo che si voglia fare una ricerca (denominata `RomaCentro`) in un raggio di `5` chilometri dal centro di Roma (associato a latitudine `41.91022566604198` e longitudine `12.535997900000098`), per immobili di almeno `70` metri quadri e di valore non superiore a `200000` €, il corretto indirizzo del feed sarebbe il seguente:
+Assumendo che si voglia fare una ricerca (denominata `RomaCentro`) in un raggio di `5` chilometri dal centro di Roma (associato a latitudine `41.91022566604198` e longitudine `12.535997900000098`), per immobili di almeno `60` metri quadri e di valore non superiore a `250000` €, il corretto indirizzo del feed sarebbe il seguente:
 
 ```
-http://$ip_server:8080/feed/?lat=41.91022566604198&lon=12.535997900000098&radius=5&price=200000&size=70&description=RomaCentro
+http://$ip_server:8080/feed/?lat=41.91022566604198&lon=12.535997900000098&radius=5&price=250000&size=60&description=RomaCentro
 ```
 
 dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `$ip_server` identifica l'indirizzo del server.
 
-TODO
+Questo indirizzo può essere fornito in input ad un aggregatore di feed RSS, come ad esempio [Reeder](http://reederapp.com) o [Feedly](http://feedly.com).
 
 ###Contatti
 

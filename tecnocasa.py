@@ -17,7 +17,7 @@ DOMAINBASEURL="http://www.tecnocasa.it"
 # returns an offer object from html code
 def getoffer(html):
 	res = {}
-	soup = BeautifulSoup(html)
+	soup = BeautifulSoup(html, 'html.parser')
 	# url
 	res['url'] = DOMAINBASEURL+str(soup.find('a')['href'])
 	if '?' in res['url']: res['url'] = res['url'][:res['url'].index('?')]
@@ -65,11 +65,11 @@ def getoffers(page, lat, lon, radius, price, size):
 	response = requests.get(FULLURL, headers={'Referer': REFERER})
 	html = response.text
 
-	soup = BeautifulSoup(html)
+	soup = BeautifulSoup(html, 'html.parser')
 	html = soup.findAll('ul')
 	html = str(html[0])
 
-	soup = BeautifulSoup(html)
+	soup = BeautifulSoup(html, 'html.parser')
 	els = soup.findAll('li')
 	els = els[2:]
 	for el in els:
