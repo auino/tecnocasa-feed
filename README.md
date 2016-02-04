@@ -94,7 +94,7 @@ Questa pagina reindirizza l'utente alla [pagina principale del progetto](https:/
 Il server web permette di recuperare un feed RSS personalizzato, visitabile al seguente indirizzo:
 
 ```
-http://$ip_server:8000/feed/?lat=$lat&lon=$lon&radius=$radius&price=$price&size=$size
+http://$ip_server:8080/feed/?lat=$lat&lon=$lon&radius=$radius&price=$price&size=$size
 ```
 
 dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `$ip_server` identifica l'indirizzo del server.
@@ -110,6 +110,14 @@ Per quanto riguarda il recupero dei parametri relativi alle coordinate, questi p
  2. Direttamente dal [sito mobile di Tecnocasa](http://m.tecnocasa.it), effettuando una ricerca ed analizzando i parametri passati nell'indirizzo
 
 ###Esempio di utilizzo
+
+Assumendo che si voglia fare una ricerca in un raggio di `5` chilometri dal centro di Roma (associato a latitudine `41.91022566604198` e longitudine `12.535997900000098`), per immobili di almeno `70` metri quadri e di valore non superiore a `200000` €, il corretto indirizzo del feed sarebbe il seguente:
+
+```
+http://$ip_server:8080/feed/?lat=41.91022566604198&lon=12.535997900000098&radius=5&price=200000&size=70
+```
+
+dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `$ip_server` identifica l'indirizzo del server.
 
 TODO
 
