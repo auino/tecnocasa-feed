@@ -130,7 +130,7 @@ http://$ip_server:8080/feed/?lat=41.91022566604198&lon=12.535997900000098&radius
 
 dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `$ip_server` identifica l'indirizzo del server.
 
-Da notare che il nome descrittivo della ricerca `Roma Centro` richiede (come ci si potrebbe aspettare) tecniche di [url encoding](http://www.w3schools.com/tags/ref_urlencode.asp).
+Da notare che il nome descrittivo della ricerca `Roma Centro` richiede (come ci si potrebbe aspettare) tecniche di [url encoding](http://www.w3schools.com/tags/ref_urlencode.asp), che vedono in questo caso sostituire lo spazio con la sequenza di caratteri `%20`.
 
 Questo indirizzo può essere fornito in input ad un aggregatore di feed RSS, come ad esempio [Reeder](http://reederapp.com) o [Feedly](http://feedly.com).
 
