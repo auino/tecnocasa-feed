@@ -99,7 +99,7 @@ http://$ip_server:8080/feed/?lat=$lat&lon=$lon&radius=$radius&price=$price&size=
 
 dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `$ip_server` identifica l'indirizzo del server.
 
-La pagina richiede pertanto il passaggio in input delle seguenti informazioni:
+La pagina richiede pertanto il passaggio in input delle seguenti informazioni (tutti i parametri sono obbligatori):
  * le coordinate di un punto di riferimento su mappa, sotto forma di latitudine (parametro `$lat`) e longitudine (parametro `$lon`)
  * il raggio considerato per la ricerca di offerte (parametro `$radius`), in chilometri
  * il prezzo massimo da considerare (parametro `$price`), senza punti o virgole
