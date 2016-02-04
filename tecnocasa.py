@@ -8,6 +8,7 @@ DESTINATIONPROPERTY="CIVIL"
 MISSION="acquis"
 TOWNID=""
 PAGESIZE=10
+PAGESCOUNT=3
 BASEURL="http://m.tecnocasa.it/annunci/immobili/"
 REFERER="http://m.tecnocasa.it/"
 
@@ -97,7 +98,7 @@ class feed:
 		d = web.input()
 		url = None
 		offers = []
-		for p in range(0, int(d['pages'])):
+		for p in range(0, PAGESCOUNT):
 			print p
 			offers += getoffers(p, d['lat'], d['lon'], d['radius'], d['price'], d['size'])
 		date = datetime.today().strftime("%a, %d %b %Y %H:%M:%S +0200")
