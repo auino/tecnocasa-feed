@@ -25,6 +25,22 @@ Pertanto, siccome l'approccio seguito si basa su una analisi sintattica, il sist
 
 Da notare che, sebbene il programma sia da intendersi principalmente per un pubblico italiano, il codice ed i commenti in esso presenti sono scritti in lingua inglese.
 
+####Download
+
+Per installare il software eseguire il seguente comando da terminale:
+
+```
+git clone https://github.com/auino/tecnocasa-feed.git
+```
+
+Una directory di nome `tecnocasa-feed` verrà creata.
+
+A questo punto è possibile accedere alla directory creata con il seguente comando:
+
+```
+cd tecnocasa-feed
+```
+
 ####Prerequisiti
 
 Il programma è scritto in Python ed utilizza le seguenti librerie:
@@ -32,7 +48,11 @@ Il programma è scritto in Python ed utilizza le seguenti librerie:
  * [requests](http://docs.python-requests.org/en/master/) to communicate with Tecnocasa servers
  * [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) to parse HTML contents
 
-TODO
+Per installare le librerie necessarie, eseguire il seguente comando da terminale:
+
+```
+sudo pip install -r requirements.txt
+```
 
 ####Configurazione
 

@@ -2,7 +2,7 @@
 import web
 import requests
 from datetime import datetime
-from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 
 DESTINATIONPROPERTY="CIVIL"
 MISSION="acquis"
