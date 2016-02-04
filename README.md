@@ -21,6 +21,9 @@ Occorre sottolineare che lo sviluppatore non è in alcun modo affiliato a Tecnoc
 Il programma fa uso di tecniche di [parsing](https://it.wikipedia.org/wiki/Parsing) (attraverso la libreria [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/)) per analizzare il contenuto (sotto forma di [DOM](https://it.wikipedia.org/wiki/Document_Object_Model)) del [sito mobile di Tecnocasa](http://m.tecnocasa.it).
 Pertanto, siccome l'approccio seguito si basa su una analisi sintattica, il sistema non è da ritenersi affidabile nel caso di modifiche alla struttura delle pagine analizzate.
 
+Il parsing è effettuato a run-time, dunque le informazioni vengono recuperate al momento della richiesta dell'utente.
+Sebbene una soluzione di questo tipo porti a tempi di risposta più elevati, essa è in grado di fornire sempre una versione aggiornata dei risultati e non richiede l'adozione di tecniche di caching.
+
 ###Setup del server
 
 Da notare che, sebbene il programma sia da intendersi principalmente per un pubblico italiano, il codice ed i commenti in esso presenti sono scritti in lingua inglese.
@@ -79,14 +82,28 @@ python tecnocasa.py 1234
 Il server web fornisce una pagina principale (generalmente nota come `index`), visitabile al seguente indirizzo:
 
 ```
-http://ip_server:8080/
+http://$ip_server:8080/
 ```
 
-dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `ip_server` identifica l'indirizzo del server.
+dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `$ip_server` identifica l'indirizzo del server.
 
 Questa pagina reindirizza l'utente alla [pagina principale del progetto](https://github.com/auino/tecnocasa-feed) su GitHub.
 
 ####Pagina del feed
+
+Il server web permette di recuperare un feed RSS personalizzato, visitabile al seguente indirizzo:
+
+```
+http://$ip_server:8000/feed/?lat=$lat&lon=$lon&radius=$radius&price=$price&size=$size
+```
+
+dove si assume che il server sia in ascolto sulla porta di default `8080`, e dove `$ip_server` identifica l'indirizzo del server.
+
+La pagina richiede pertanto il passaggio in input delle seguenti informazioni:
+ * le coordinate di un punto di riferimento su mappa, sotto forma di latitudine (parametro `$lat`) e longitudine (parametro `$lon`)
+ * il raggio considerato per la ricerca di offerte (parametro `$radius`)
+ * il prezzo massimo da considerare (parametro `$price`), senza punti o virgole
+ * la dimensione minima in metri quadri (parametro `$size`)
 
 TODO
 
