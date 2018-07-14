@@ -57,7 +57,7 @@ sudo pip install -r requirements.txt
 
 #### Configurazione
 
-E' possibile configurare il programma modificando manualmente il contenuto del file [tecnocasa.py]((https://github.com/auino/tecnocasa-feed/blob/master/tecnocasa.py).
+E' possibile configurare il programma modificando manualmente il contenuto del file [tecnocasa.py](https://github.com/auino/tecnocasa-feed/blob/master/tecnocasa.py).
 
 ##### Configurazione del web service
 
